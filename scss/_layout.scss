@@ -45,6 +45,7 @@ header[role="banner"] {
     padding: $gutters;
     width: 76%;
     @media (max-width: 480px) {
+        font-size: 30px;
         width: 100%;
     }
 }
@@ -52,7 +53,80 @@ header[role="banner"] {
 .work {
     background: url('../img/seattle.jpg') no-repeat center center;
     background-size: cover;
+    line-height: 300px;
+    @media (max-width: 480px) {
+        line-height: 150px;
+    }
     height: 300px;
+    @media (max-width: 480px) {
+        height: 150px;
+    }
+    margin-top: $gutters;
+    text-align: center;
+}
+
+.branding, .interactive, .marketing{
+    box-sizing: border-box;
+    float: left;
+    //margin: 0 $gutters;
+    width: 33.333333%;
+    @media (max-width: 768px){
+        width: 100%;
+    }
+    text-align: justify;
+}
+
+.inner {
+    background-color: lighten($color,30%);
+    min-height: 200px;
+}
+
+.branding {
+    padding: $gutters $gutters /2 $gutters 0;
+    @media (max-width: 768px){
+        padding: $gutters 0 $gutters /2 0;
+    }
+    //padding: top right bottom left;
+}
+
+.interactive {
+    padding: $gutters $gutters /2 $gutters $gutters /2;
+    @media (max-width: 768px) {
+        padding: $gutters /2 0;
+    }
+    //padding: top right bottom left;
+}
+
+.marketing {
+    padding: $gutters 0 $gutters $gutters /2;
+    @media (max-width: 768px) {
+        padding: $gutters /2 0 $gutters 0;
+    }
+    //padding: top right bottom left;
+}
+
+footer[role="contentinfo"] {
+    background-color: $color;
+    color: #fff;
+}
+
+.contentinfo-social, .contentinfo-about {
+    box-sizing: border-box;
+    float: left;
+}
+
+.contentinfo-social{
+    width: 30%;
+    @media (max-width: 768px); {
+        width: 100%;
+    }
+}
+
+.contentinfo-about{
+    width: 70%;
+    @media (max-width: 768px); {
+        width: 100%;
+    }
 }
 
 .group:after {
